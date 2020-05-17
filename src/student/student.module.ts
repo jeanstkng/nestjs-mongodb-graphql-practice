@@ -11,6 +11,7 @@ import { StudentResolver } from './student.resolver';
   providers: [
     StudentService,
     StudentResolver
-  ]
+  ],
+  exports: [StudentService]
 })
 export class StudentModule {}
